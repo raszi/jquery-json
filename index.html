@@ -22,14 +22,14 @@
 </pre>
 
 <p>
-This plugin exposes five new functions onto the $, or jQuery object:
+This plugin extends the jQuery object with four new methods:
 </p>
 
 <ul>
-<li><var>toJSON</var>: Serializes a javascript object, number, string, or arry into JSON.</li>
-<li><var>compactJSON</var>: Serializes as toJSON, but takes out some spaces, making the result that much shorter.</li>
-<li><var>evalJSON</var>: Converts from JSON to Javascript, quickly, and is trivial.</li>
-<li><var>secureEvalJSON</var>: Converts from JSON to Javascript, but does so while checking to see if the source is actually JSON, and not with other Javascript statements thrown in.</li>
+<li><var>toJSON</var>: Serializes a javascript array, object, number, String or Date into JSON.</li>
+<li><var>compactJSON</var>: Serializes as toJSON does, but takes out spaces, making the result shorter.</li>
+<li><var>evalJSON</var>: Converts from JSON to Javascript, quickly.</li>
+<li><var>secureEvalJSON</var>: Converts from JSON to Javascript in a secure way.</li>
 </ul>
 
 </body>
