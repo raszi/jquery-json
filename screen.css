@@ -1,0 +1,13 @@
+pre {
+	font-family: Monaco, "Courier New", Courier, monospace;
+	font-size: 12px;
+	color: #fff;
+	background-color: #333;
+	padding: 5px;
+	margin: 10px;
+	border: solid 3px #aaa;
+}
+span.Comment { color: #00ffff; font-weight: bold; }
+span.Statement { color: #ffff00; font-weight: bold; }
+span.Constant { color: #ff40ff; font-weight: bold; }
+span.Type { color: #00ff00; font-weight: bold; }
