@@ -1,0 +1,33 @@
+jquery-json
+
+JSON plugin for jQuery, provides simple ways to convert to JSON and back again.
+
+This plugin makes it simple to convert to and from JSON:
+
+------------------------------------------------------------------------------
+
+var thing = {plugin: 'jquery-json', version: 1.3};
+
+var encoded = $.toJSON(thing);              //'{"plugin": "jquery-json", "version": 1.3}'
+var name = $.evalJSON(encoded).plugin;      //"jquery-json"
+var version = $.evalJSON(encoded).version;  // 1.3
+
+------------------------------------------------------------------------------
+
+Most people asked me why I would want to do such a thing, which boggles my
+mind. Javascript makes it relatively easy to convert from JSON, thanks to
+eval(), but converting to JSON is supposedly an edge requirement.
+
+
+This plugin exposes five new functions onto the $, or jQuery object:
+
+toJSON: Serializes a javascript object, number, string, or arry into JSON.
+
+compactJSON: Serializes as toJSON, but takes out some spaces, making the result
+that much shorter.
+
+evalJSON: Converts from JSON to Javascript, quickly, and is trivial.
+
+secureEvalJSON: Converts from JSON to Javascript, but does so while checking to
+see if the source is actually JSON, and not with other Javascript statements
+thrown in.
